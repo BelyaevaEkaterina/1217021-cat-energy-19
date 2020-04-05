@@ -12,7 +12,7 @@
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a>Главная</a>
+            <a href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
             <a href="catalog.html">Каталог продукции</a>
@@ -24,6 +24,76 @@
       </nav>
     </header>
     <main class="page-main">
+      <form class="form" action="https://echo.htmlacademy.ru" metod="post">
+        <h2 class="form__title">Подбор программы</h2>
+        <p class="form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <label class="form__input-field">
+          Имя:*
+          <input type="text" placeholder="Барсик" required>
+        </label>
+        <label class="form__input-field">
+          Вес (кг):*
+          <input type="text" placeholder="7" required>
+        </label>
+        <label class="form__input-field">
+          Возраст (лет):
+          <input type="text" placeholder="7">
+        </label>
+        <label class="form__radio-field">
+          <input type="radio" name="target" checked>
+          Похудение
+        </label>
+        <label class="form__radio-field">
+          <input type="radio" name="target">
+          Набор массы
+        </label>
+        <label class="form__radio-field">
+          <input type="radio" name="target">
+          Не знаю (Нужен ваш совет)
+        </label>
+        <fieldset class="form__contacts">
+          <legend class="form__contacts-title">Контактные данные(владельца кота)</legend>
+          <label class="form__input-field">
+            E-mail:*
+            <input type="email" placeholder="kuklachev@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
+          </label>
+          <label class="form__input-field">
+            Телефон:*
+            <input type="tel" placeholder="8 (960) 900-60-90" pattern="([0-9]{3})[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+          </label>
+        </fieldset>
+        <fieldset class="form__comment">
+          <legend class="form__comment-title">Комментарий</legend>
+          <textarea class="form__comment-text" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </fieldset>
+        <fieldset class="form__additionally">
+          <legend class="form__additionally-title">Дополнительно</legend>
+          <label class="form__checkbox-field">
+            <input type="checkbox" name="additionally" name="sweetener" checked>
+            Сахарозаменитель
+          </label>
+          <label class="form__checkbox-field">
+            <input type="checkbox" name="additionally" name="water">
+            Питьевая вода
+          </label>
+          <label class="form__checkbox-field">
+            <input type="checkbox" name="additionally" name="milk">
+            Молоко
+          </label>
+          <label class="form__checkbox-field">
+            <input type="checkbox" name="additionally" name="vitamins">
+            Витамины
+          </label>
+        </fieldset>
+        <button class="form__button button" type="submit">Отправить заявку</button>
+        <p class="form__note">* — Обязательные поля</p>
+      </form>
+      <section class="partnership">
+        <h2 class="partnership__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <p class="partnership__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <img class="partnership__map" src="https://via.placeholder.com/320x400" width="320" height="400" alt="Участок карты с адресом фирмы">
+        <img class="partnership__pointer" src="https://via.placeholder.com/55x53" width="55" height="53" alt="Указатель">
+      </section>
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo logo"  href="index.html">
@@ -43,7 +113,7 @@
       <div class="page-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           HTML Academy
-          <img class="copyright_htmlacademy-logo" src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип HTMLAcademy">
+          <img class="copyright__htmlacademy-logo" src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип HTMLAcademy">
         </a>
       </div>
     </footer>
