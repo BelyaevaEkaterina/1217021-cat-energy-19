@@ -12,6 +12,7 @@
 .program-selection__title {
   font-size: 36px;
   line-height: 36px;
+  font-weight: 400;
   margin: 0;
 }
 
@@ -29,4 +30,69 @@
   background-color: @base-color;
   font-size: 14px;
   line-height: 18px;
+}
+
+@media (min-width: @tablet-width) {
+  .program-selection {
+    background-image: none;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    padding-left: 90px;
+    color: @black-text-color;
+    text-align: left;
+    position: relative;
+    min-height: 774px;
+  }
+
+  .program-selection__title{
+    font-size: 60px;
+    line-height: 60px;
+    width: 414px;
+  }
+
+  .program-selection__tagline {
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 33px;
+    padding-bottom: 48px;
+  }
+
+  .program-selection__img{
+    position: absolute;
+    bottom: 0;
+  }
+
+  .program-selection__button {
+    text-align: center;
+    font-size: 20px;
+    line-height: 20px;
+    position: relative;
+    z-index: 10;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program-selection {
+    width: @desktop-width;
+    margin-left: -110px;
+    margin-top: -128px;
+    padding-left: 193px;
+    box-sizing: border-box;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-position: right top;
+    background-size: 720px;
+    padding-top: 222px;
+    min-height: 696px;
+  }
+
+  .program-selection__tagline {
+    padding-top: 40px;
+    padding-bottom: 54px;
+  }
+
+  .program-selection__img{
+    bottom: 55px;
+    right: 328px;
+  }
 }

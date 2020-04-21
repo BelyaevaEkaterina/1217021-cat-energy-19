@@ -32,30 +32,39 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-}
 
-@media (min-width: @tablet-width) {
   .site-list__item {
     border-top: none;
     width: auto;
     margin-left: 37px;
+    padding-bottom: 12px;
   }
-}
 
-@media (min-width: @tablet-width) {
+  .site-list__item:first-child {
+    border-bottom: 2px solid @base-color;
+  }
+
   .site-list__item:last-child {
     border: none;
   }
-}
 
-@media (min-width: @tablet-width) {
   .site-list__link {
     color: @text-color;
+    margin: 0;
+    padding: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .site-list__link {
     color: @white;
+  }
+
+  .site-list__item {
+    margin-left: 22px;
+  }
+
+  .site-list__item:first-child {
+    border-bottom: 2px solid @white;
   }
 }
