@@ -101,3 +101,125 @@
   width: 25px;
   height: 12px;
 }
+
+@media (min-width: @tablet-width) {
+  .program-options {
+    width: 100%;
+    padding: 0;
+  }
+
+  .program-options__program-option {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    min-height: 372px;
+    margin-bottom: 30px;
+    padding-top: 81px;
+    padding-left: 52px;
+    padding-right: 284px;
+  }
+
+  .program-options__title {
+    font-size: 36px;
+    margin-left: 0;
+  }
+
+  .program-options__text {
+    margin-top: 20px;
+  }
+
+  .program-options__link {
+    padding-top: 45px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .program-options__link::before {
+    border: none;
+  }
+
+  .program-options__link::after {
+    top: 50px;
+    left: 125px;
+  }
+
+  .program-options__program-option::before {
+    width: 200px;
+    height: 200px;
+    top: 92px;
+    left: 450px;
+  }
+
+  .program-options__title--slim::before {
+    width: 141px;
+    height: 194px;
+    top: 82px;
+    left: 480px;
+    z-index: 10;
+  }
+
+  .program-options__title--pro::before {
+    width: 268px;
+    height: 113px;
+    position: absolute;
+    top: 130px;
+    left: 410px;
+    z-index: 10;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program-options {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+  }
+
+  .program-options__program-option {
+    width: 570px;
+    padding-left: 52px;
+    padding-right: 56px;
+  }
+
+  .program-options__title {
+    margin-left: 164px;
+  }
+
+  .program-options__text {
+    margin-top: 70px;
+  }
+
+  .program-options__link {
+    padding-top: 20px;
+    padding-bottom: 62px;
+  }
+
+  .program-options__link::after {
+    top: 26px;
+    left: 125px;
+  }
+
+  .program-options__program-option::before {
+    width: 100px;
+    height: 100px;
+    top: 47px;
+    left: 52px;
+  }
+
+  .program-options__title--slim::before {
+    width: 71px;
+    height: 97px;
+    top: 40px;
+    left: 62px;
+    z-index: 10;
+  }
+
+  .program-options__title--pro::before {
+    width: 134px;
+    height: 57px;
+    position: absolute;
+    top: 70px;
+    left: 33px;
+    z-index: 10;
+  }
+}
