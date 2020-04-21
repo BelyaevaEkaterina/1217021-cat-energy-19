@@ -18,3 +18,30 @@
   right: 2px;
   top: -42px;
 }
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    width: auto;
+    padding-top: 47px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav::before {
+    background-image: none;
+    width: 0;
+    height: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    padding-top: 77px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
