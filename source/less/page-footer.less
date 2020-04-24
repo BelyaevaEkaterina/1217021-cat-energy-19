@@ -8,3 +8,23 @@
   text-align: center;
   margin: 0;
 }
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    width: @tablet-width;
+    margin-left: -30px;
+    display: flex;
+    background-color: @gray-background;
+    padding-top: 25px;
+    padding-left: 41px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    width: @desktop-width;
+    margin-left: -110px;
+    padding-top: 30px;
+    padding-left: 110px;
+  }
+}

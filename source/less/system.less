@@ -130,8 +130,8 @@
     font-weight: 400;
     line-height: 281px;
     position: absolute;
-    top: -75px;
-    right: 120px;
+    top: -51px;
+    left: 117px;
   }
 
   .system__item--use::before,
@@ -150,5 +150,28 @@
   .system__item--result::after {
     left: 11px;
     top: -100px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .system {
+    padding-top: 44px;
+  }
+
+  .system__item {
+    margin-top: 83px;
+    padding-right: 80px;
+  }
+
+  .system__item:nth-child(2n+1) {
+    margin-right: 0;
+  }
+
+  .system__item:nth-child(4n) {
+    padding-right: 0;
+  }
+
+  .system:after {
+    border: none;
   }
 }
