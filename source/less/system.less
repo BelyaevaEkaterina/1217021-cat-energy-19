@@ -23,10 +23,20 @@
   padding-top: 8px;
   padding-bottom: 18px;
   position: relative;
-
 }
 
-.system__item::before {
+.system__item--use,
+.system__item--speed,
+.system__item--way,
+.system__item--result {
+  position: relative;
+  z-index: 10;
+}
+
+.system__item--use::before,
+.system__item--speed::before,
+.system__item--way::before,
+.system__item--result::before {
   content: "";
   position: absolute;
   width: 60px;
@@ -36,7 +46,10 @@
   top: 6px;
 }
 
-.system__item::after {
+.system__item--use::after,
+.system__item--speed::after,
+.system__item--way::after,
+.system__item--result::after {
   content: "";
   position: absolute;
   width: 52px;
@@ -60,4 +73,82 @@
 
 .system__item--result::after {
   background-image: url("../img/advantage-clock@1x.png");
+}
+
+.system__number {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .system {
+    padding-top: 10px;
+    padding-bottom: 46px;
+    position: relative;
+  }
+
+  .system:after {
+    content: "";
+    width: 768px;
+    border: 1px solid @borders-color;
+    bottom: 0;
+    left: -30px;
+    position: absolute;
+  }
+
+  .system__title {
+    font-size: 60px;
+    padding-top: 0px;
+    padding-bottom: 0;
+    margin: 0;
+  }
+
+  .system__list{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .system__item {
+    width: 245px;
+    margin: 0;
+    margin-top: 87px;
+    padding-right: 78px;
+    padding-bottom: 58px;
+    padding-top: 100px;
+    position: relative;
+  }
+
+  .system__item:nth-child(2n+1) {
+    margin-right: 58px;
+  }
+
+  .system__number {
+    display: block;
+    color: @gray-background;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 281px;
+    font-weight: 400;
+    line-height: 281px;
+    position: absolute;
+    top: -75px;
+    right: 120px;
+  }
+
+  .system__item--use::before,
+  .system__item--speed::before,
+  .system__item--way::before,
+  .system__item--result::before {
+    width: 80px;
+    height: 80px;
+    left: -1px;
+    top: -114px;
+  }
+
+  .system__item--use::after,
+  .system__item--speed::after,
+  .system__item--way::after,
+  .system__item--result::after {
+    left: 11px;
+    top: -100px;
+  }
 }
