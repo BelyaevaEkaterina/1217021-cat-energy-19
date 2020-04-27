@@ -10,13 +10,30 @@
   font-weight: 400;
   line-height: 16px;
   position: relative;
-  padding-top: 31px;
-  padding-bottom: 31px;
+  padding-top: 28px;
+  padding-bottom: 28px;
 }
 
 .copyright__htmlacademy-logo {
   margin-left: 112px;
   position: absolute;
   top: 15px;
-  right: -170px;
+  right: -173px;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    padding-top: 8px;
+  }
+
+  .copyright__htmlacademy-logo {
+    top: 17px;
+    right: -58px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .copyright {
+    padding-top: 10px;
+  }
 }
