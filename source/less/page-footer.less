@@ -3,9 +3,13 @@
 }
 
 .page-footer__logo {
-  padding-top: 60px;
   text-align: center;
   margin: 0;
+}
+
+.page-footer__logo-image {
+  padding-top: 35px;
+  padding-bottom: 30px;
 }
 
 @media (min-width: @tablet-width) {
@@ -16,10 +20,15 @@
     background-color: @gray-background;
     padding-left: 35px;
     min-height: 140px;
+    box-sizing: border-box;
+  }
+
+  .page-footer__logo-image {
+    padding-top: 57px;
   }
 
   .page-footer__copyright {
-    padding-top: 33px;
+    padding-top: 30px;
   }
 }
 
@@ -28,6 +37,9 @@
     width: @desktop-width;
     margin-left: -110px;
     padding-left: 110px;
-    box-sizing: border-box;
+  }
+
+  .page-footer__copyright {
+    padding-top: 32px;
   }
 }

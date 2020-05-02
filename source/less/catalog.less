@@ -18,10 +18,16 @@
 
 .catalog__item {
   position: relative;
-  padding-bottom: 23px;
+  padding-bottom: 24px;
   padding-top: 22px;
-  border: 1px solid @separator-color;
+  border-left: 1px solid @separator-color;
+  border-right: 1px solid @separator-color;
+  border-bottom: 1px solid @separator-color;
   box-sizing: border-box;
+}
+
+.catalog__item:first-child {
+  border-top: 1px solid @separator-color;
 }
 
 .catalog__img {
@@ -105,7 +111,7 @@
   line-height: 16px;
   color: @light-text-color;
   text-align: center;
-  margin-top: 6px;
+  margin-top: 8px;
   margin-bottom: 22px;
 }
 
