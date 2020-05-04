@@ -31,42 +31,44 @@
       <form class="form" action="https://echo.htmlacademy.ru" metod="post">
         <h2 class="form__title">Подбор программы</h2>
         <p class="form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
-        <ul class="form__input">
-          <li class="form__input-item">
-            <label class="form__label" for="name">Имя:*</label>
-            <input class="form__input-field" type="text" placeholder="Барсик" id="name" required>
-          </li>
-          <li class="form__input-item">
-            <label class="form__label" for="weight">Вес (кг):* </label>
-            <input class="form__input-field" type="text" placeholder="7" id="weight" required>
-          </li>
-          <li class="form__input-item">
-            <label class="form__label form__label--age" for="age">Возраст (лет):</label>
-            <input class="form__input-field form__input-field--age" type="text" placeholder="7" id="age">
-          </li>
-        </ul>
-        <ul class="form__radio-list">
-          <li class="form__radio-item">
-            <label class="form__label" for="radio-slim">Похудение</label>
-            <input class="form__radio" type="radio" name="target" id="radio-slim" checked>
-          </li>
-          <li class="form__radio-item">
-            <label class="form__label" for="radio-pro">Набор массы</label>
-            <input class="form__radio" type="radio" name="target" id="radio-pro">
-          </li>
-          <li class="form__radio-item">
-            <label class="form__label" for="radio-indefined"> Не знаю (Нужен ваш совет)</label>
-            <input class="form__radio" type="radio" name="target" id="radio-indefined">
-          </li>
-        </ul>
-        <fieldset class="form__contacts">
-          <legend class="form__contacts-title form__title--internal">Контактные данные (владельца кота)</legend>
+        <div class="form__top-block">
           <ul class="form__input">
             <li class="form__input-item">
+              <label class="form__label" for="name">Имя:*</label>
+              <input class="form__input-field" type="text" placeholder="Барсик" id="name" required>
+            </li>
+            <li class="form__input-item">
+              <label class="form__label" for="weight">Вес (кг):* </label>
+              <input class="form__input-field" type="text" placeholder="7" id="weight" required>
+            </li>
+            <li class="form__input-item">
+              <label class="form__label form__label--age" for="age">Возраст (лет):</label>
+              <input class="form__input-field form__input-field--age" type="text" placeholder="7" id="age">
+            </li>
+          </ul>
+          <ul class="form__radio-list">
+            <li class="form__radio-item">
+              <label class="form__label" for="radio-slim">Похудение</label>
+              <input class="form__radio" type="radio" name="target" id="radio-slim" checked>
+            </li>
+            <li class="form__radio-item">
+              <label class="form__label" for="radio-pro">Набор массы</label>
+              <input class="form__radio" type="radio" name="target" id="radio-pro">
+            </li>
+            <li class="form__radio-item">
+              <label class="form__label" for="radio-indefined"> Не знаю (Нужен ваш совет)</label>
+              <input class="form__radio" type="radio" name="target" id="radio-indefined">
+            </li>
+          </ul>
+        </div>
+        <fieldset class="form__contacts">
+          <legend class="form__contacts-title form__title--internal">Контактные данные (владельца кота)</legend>
+          <ul class="form__input form__input--contacts">
+            <li class="form__input-item form__input-item--contacts">
               <label class="form__label form__label--email" for="email">E-mail:*</label>
               <input class="form__input-field" type="email" id="email" placeholder="kuklachev@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
             </li>
-            <li class="form__input-item">
+            <li class="form__input-item form__input-item--contacts">
               <label class="form__label form__label--tel" for="id">Телефон:*</label>
               <input class="form__input-field" type="tel" id="tel" placeholder="8 (960) 900-60-90" pattern="([0-9]{3})[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
             </li>
@@ -98,8 +100,10 @@
             </li>
           </ul>
         </fieldset>
-        <button class="form__button button" type="submit">Отправить заявку</button>
-        <p class="form__note text">* — Обязательные поля</p>
+        <div class="form__footer">
+          <button class="form__button button" type="submit">Отправить заявку</button>
+          <p class="form__note text">* — Обязательные поля</p>
+        </div>
       </form>
       <section class="partnership">
         <div class ="partnership__text-block partnership__text-block--catalog">
