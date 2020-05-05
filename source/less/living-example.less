@@ -71,3 +71,117 @@
   line-height: 20px;
   text-align: center;
 }
+
+@media (min-width: @tablet-width) {
+  .living-example {
+    width: auto;
+    padding-top: 48px;
+    padding-right: 0;
+    padding-bottom: 0;
+    background-color: @white;
+    min-height: 1036px;
+  }
+
+  .living-example__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .living-example__text {
+    padding-top: 66px;
+    padding-right: 8px;
+    padding-bottom: 52px;
+  }
+
+  .living-example__indicators {
+    justify-content: flex-start;
+  }
+
+  .living-example__indicator {
+    width: 162px;
+    margin-right: 42px;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .living-example__indicator-value {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .living-example__indicator-text {
+    font-size: 14px;
+    line-height: 14px;
+    width: 142px;
+    background-color: @white;
+    left: 9px;
+    bottom: -10px;
+    padding: 0;
+  }
+
+  .living-example__all-info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .living-example__cost {
+    font-size: 20px;
+    line-height: 26px;
+    width: 174px;
+    text-align: right;
+    padding-top: 10px;
+  }
+
+  .slider {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .living-example {
+    width: 1440px;
+    margin-left: -110px;
+    background-color: @gray-background;
+    padding: 0;
+    min-height: 618px;
+    position: relative;
+  }
+
+  .living-example__title {
+    background-color: @white;
+    padding-top: 20px;
+    padding-left: 110px;
+    height: 137px;
+    width: 100%;
+  }
+
+  .living-example__text {
+    padding-left: 110px;
+    padding-top: 69px;
+    padding-bottom: 68px;
+    width: 432px;
+  }
+
+  .living-example__all-info {
+    padding-left: 110px;
+    display: block;
+  }
+
+  .living-example__indicator-text {
+    background-color: @gray-background;
+  }
+
+  .living-example__cost {
+    padding-top: 56px;
+    width: 432px;
+    text-align: left;
+  }
+
+  .living-example__cost-value {
+    padding-left: 59px;
+  }
+
+  .slider {
+    position: absolute;
+  }
+}

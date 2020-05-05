@@ -2,11 +2,14 @@
   text-align: center;
 }
 
-.page-footer__logo-image {
-  padding-top: 34px;
-  padding-bottom: 31px;
+.page-footer__logo {
   text-align: center;
   margin: 0;
+}
+
+.page-footer__logo-image {
+  padding-top: 35px;
+  padding-bottom: 30px;
 }
 
 @media (min-width: @tablet-width) {
@@ -15,9 +18,17 @@
     margin-left: -30px;
     display: flex;
     background-color: @gray-background;
-    padding-top: 25px;
-    padding-left: 41px;
-    min-height: 150px;
+    padding-left: 35px;
+    min-height: 140px;
+    box-sizing: border-box;
+  }
+
+  .page-footer__logo-image {
+    padding-top: 57px;
+  }
+
+  .page-footer__copyright {
+    padding-top: 30px;
   }
 }
 
@@ -25,8 +36,10 @@
   .page-footer {
     width: @desktop-width;
     margin-left: -110px;
-    padding-top: 30px;
     padding-left: 110px;
-    min-height: 150px;
+  }
+
+  .page-footer__copyright {
+    padding-top: 32px;
   }
 }
