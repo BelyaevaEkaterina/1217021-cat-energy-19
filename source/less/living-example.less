@@ -1,7 +1,7 @@
 .living-example {
   background-color: @gray-background;
   padding-top: 28px;
-  padding-bottom: 33px;
+  padding-bottom: 34px;
   padding-left: 20px;
   padding-right: 20px;
   width: 280px;
@@ -74,17 +74,20 @@
 
 @media (min-width: @tablet-width) {
   .living-example {
-    width: auto;
+    width: @tablet-width;
+    margin-left: -20px;
     padding-top: 41px;
-    padding-right: 0;
+    padding-right: 40px;
     padding-bottom: 0;
+    padding-left: 20px;
     background-color: @white;
-    min-height: 1036px;
+    box-sizing: border-box;
   }
 
   .living-example__title {
     font-size: 60px;
     line-height: 60px;
+
   }
 
   .living-example__text {
@@ -130,10 +133,6 @@
     width: 174px;
     text-align: right;
     padding-top: 7px;
-  }
-
-  .slider {
-    display: block;
   }
 }
 
