@@ -1,12 +1,17 @@
 .program-selection {
   background-image: url("../img/index-background-mobile@1x.jpg");
   width: 320px;
+  background-size: 320px;
   background-repeat: no-repeat;
   color: @white;
   text-align: center;
   font-weight: 400;
   padding-top: 28px;
   margin-left: -20px;
+
+  @media (min-resolution: @retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
 }
 
 .program-selection__title {
@@ -38,7 +43,7 @@
     width: auto;
     margin: 0;
     padding: 0;
-    padding-left: 88px;
+    padding-left: 89px;
     padding-top: 17px;
     color: @black-text-color;
     text-align: left;
@@ -55,13 +60,14 @@
   .program-selection__tagline {
     font-size: 20px;
     line-height: 20px;
-    padding-top: 42px;
+    padding-top: 40px;
     padding-bottom: 48px;
   }
 
   .program-selection__img {
     position: absolute;
-    bottom: 0;
+    bottom: -35px;
+    right: 0;
   }
 
   .program-selection__button {
@@ -69,7 +75,9 @@
     font-size: 20px;
     line-height: 20px;
     position: relative;
-    z-index: 10;
+    padding-top: 15px;
+    padding-bottom: 17px;
+    margin-left: 2px;
   }
 }
 
@@ -85,6 +93,10 @@
     background-size: 720px;
     padding-top: 222px;
     min-height: 696px;
+
+    @media (min-resolution: @retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
   }
 
   .program-selection__tagline {
@@ -93,8 +105,8 @@
   }
 
   .program-selection__img {
-    bottom: 55px;
-    right: 328px;
+    bottom: 57px;
+    right: 326px;
   }
 
   .program-selection__button {
