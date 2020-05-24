@@ -25,22 +25,22 @@
   position: relative;
 }
 
-.system__item--result br {
+.system__result br {
   display: none;
 }
 
-.system__item--use,
-.system__item--speed,
-.system__item--way,
-.system__item--result {
+.system__use,
+.system__speed,
+.system__way,
+.system__result {
   position: relative;
   z-index: 10;
 }
 
-.system__item--use::before,
-.system__item--speed::before,
-.system__item--way::before,
-.system__item--result::before {
+.system__use::before,
+.system__speed::before,
+.system__way::before,
+.system__result::before {
   content: "";
   position: absolute;
   width: 60px;
@@ -50,10 +50,10 @@
   top: -2px;
 }
 
-.system__item--use::after,
-.system__item--speed::after,
-.system__item--way::after,
-.system__item--result::after {
+.system__use::after,
+.system__speed::after,
+.system__way::after,
+.system__result::after {
   content: "";
   position: absolute;
   width: 50px;
@@ -63,19 +63,19 @@
   top: 2px;
 }
 
-.system__item--use::after {
+.system__use::after {
   background-image: url("../img/advantage-leaf@1x.png");
 }
 
-.system__item--speed::after {
+.system__speed::after {
   background-image: url("../img/advantage-powder@1x.png");
 }
 
-.system__item--way::after {
+.system__way::after {
   background-image: url("../img/advantage-dining@1x.png");
 }
 
-.system__item--result::after {
+.system__result::after {
   background-image: url("../img/advantage-clock@1x.png");
 }
 
@@ -138,25 +138,25 @@
     left: 115px;
   }
 
-  .system__item--use::before,
-  .system__item--speed::before,
-  .system__item--way::before,
-  .system__item--result::before {
+  .system__use::before,
+  .system__speed::before,
+  .system__way::before,
+  .system__result::before {
     width: 80px;
     height: 80px;
     left: 1px;
     top: -116px;
   }
 
-  .system__item--use::after,
-  .system__item--speed::after,
-  .system__item--way::after,
-  .system__item--result::after {
+  .system__use::after,
+  .system__speed::after,
+  .system__way::after,
+  .system__result::after {
     left: 15px;
     top: -101px;
   }
 
-  .system__item--result br {
+  .system__result br {
     display: block;
   }
 }
