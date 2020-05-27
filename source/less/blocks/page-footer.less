@@ -1,5 +1,12 @@
 .page-footer {
   text-align: center;
+  background-color: @gray-background;
+}
+
+.page-footer__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
 }
 
 .page-footer__logo {
@@ -8,19 +15,20 @@
 }
 
 .page-footer__logo-image {
-  padding-top: 36px;
+  padding-top: 38px;
   padding-bottom: 28px;
 }
 
 @media (min-width: @tablet-width) {
   .page-footer {
-    width: @tablet-width;
-    margin-left: -30px;
-    display: flex;
-    background-color: @gray-background;
-    padding-left: 31px;
+    width: 100%;
     min-height: 140px;
     box-sizing: border-box;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    padding-left: 30px;
   }
 
   .page-footer__logo-image {
@@ -33,13 +41,12 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-footer {
-    width: @desktop-width;
-    margin-left: -110px;
-    padding-left: 110px;
-  }
 
   .page-footer__copyright {
     padding-top: 32px;
+  }
+
+  .page-footer__wrapper {
+    padding-left: 110px;
   }
 }

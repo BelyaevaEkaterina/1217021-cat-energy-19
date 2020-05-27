@@ -1,5 +1,7 @@
 .system {
   padding-bottom: 38px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .system__title {
@@ -86,17 +88,10 @@
 @media (min-width: @tablet-width) {
   .system {
     padding-top: 15px;
-    padding-bottom: 46px;
+    padding-left: 30px;
+    padding-bottom: 43px;
     position: relative;
-  }
-
-  .system::after {
-    content: "";
-    width: 768px;
-    border-top: 1px solid @borders-color;
-    bottom: 0;
-    left: -30px;
-    position: absolute;
+    border-bottom: 1px solid @borders-color;
   }
 
   .system__title {
@@ -164,6 +159,8 @@
 @media (min-width: @desktop-width) {
   .system {
     padding-top: 44px;
+    padding-left: 110px;
+    border-bottom: none;
   }
 
   .system__item {

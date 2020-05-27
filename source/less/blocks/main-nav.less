@@ -1,13 +1,14 @@
 .main-nav {
   width: 100%;
   position: relative;
+  padding-left: 20px;
 }
 
 .main-nav__toggle {
   position: absolute;
   background-color: @white;
   top: -65px;
-  right: -20px;
+  right: 20px;
 
   display: block;
   width: 65px;
@@ -87,7 +88,7 @@
     padding-bottom: 46px;
   }
 
-  .main-nav::before {
+  .main-nav__toggle{
     background-image: none;
     width: 0;
     height: 0;
@@ -96,7 +97,7 @@
 
 @media (min-width: @desktop-width) {
   .main-nav {
-    padding-top: 74px;
+    padding-top: 76px;
     padding-bottom: 0;
     font-size: 20px;
     line-height: 25px;

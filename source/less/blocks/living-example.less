@@ -2,10 +2,7 @@
   background-color: @gray-background;
   padding-top: 28px;
   padding-bottom: 34px;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 280px;
-  margin-left: -20px;
+  width: 100%;
 }
 
 .living-example__title {
@@ -13,13 +10,15 @@
   line-height: 36px;
   font-weight: 400;
   margin: 0;
+  padding-left: 20px;
 }
 
 .living-example__text {
   margin: 0;
-  padding-right: 14px;
+  padding-right: 21px;
   padding-top: 34px;
   padding-bottom: 26px;
+  padding-left: 20px;
 }
 
 .living-example__indicators {
@@ -28,6 +27,8 @@
   justify-content: space-between;
   margin: 0;
   padding: 0;
+  padding-left: 20px;
+  padding-right: 21px;
 }
 
 .living-example__indicator {
@@ -74,12 +75,9 @@
 
 @media (min-width: @tablet-width) {
   .living-example {
-    width: @tablet-width;
-    margin-left: -20px;
+    width: 100%;
     padding-top: 41px;
-    padding-right: 40px;
     padding-bottom: 0;
-    padding-left: 20px;
     background-color: @white;
     box-sizing: border-box;
   }
@@ -87,16 +85,19 @@
   .living-example__title {
     font-size: 60px;
     line-height: 60px;
+    padding-left: 30px;
   }
 
   .living-example__text {
     padding-top: 66px;
-    padding-right: 8px;
+    padding-right: 45px;
     padding-bottom: 52px;
+    padding-left: 30px;
   }
 
   .living-example__indicators {
     justify-content: flex-start;
+    padding-left: 30px;
   }
 
   .living-example__indicator {
@@ -124,6 +125,7 @@
   .living-example__all-info {
     display: flex;
     justify-content: space-between;
+    padding-right: 30px;
   }
 
   .living-example__cost {
@@ -137,20 +139,29 @@
 
 @media (min-width: @desktop-width) {
   .living-example {
-    width: 1440px;
-    margin-left: -110px;
-    background-color: @gray-background;
     padding: 0;
     min-height: 618px;
     position: relative;
+    background-color: @gray-background;
+  }
+
+  .living-example::before {
+    content: "";
+    background-color: @white;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 161px;
+    z-index: 0;
   }
 
   .living-example__title {
     background-color: @white;
-    padding-top: 20px;
+    padding-top: 24px;
     padding-left: 110px;
     height: 137px;
     width: 100%;
+    z-index: 10;
   }
 
   .living-example__text {
@@ -161,16 +172,17 @@
   }
 
   .living-example__all-info {
-    padding-left: 110px;
+    padding-left: 83px;
     display: block;
   }
 
   .living-example__indicator-text {
-    background-color: @gray-background;
+    background-color: transparent;
   }
 
   .living-example__cost {
     padding-top: 56px;
+    padding-left: 30px;
     width: 432px;
     text-align: left;
   }
